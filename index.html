@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+	<head>
+        
+        <meta charset="utf-8">
+        <title>MSP food resources for kids</title>
+        <meta name="keywords" content="minnesota, minneapolis, st paul, saint paul, food for students, grab and go meals">
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+        
+        <script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
+        <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js"></script>
+
+        <!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
+        <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css" rel="stylesheet" />
+        <link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    </head>
+    
+    <body>
+        <div class="container-fluid">
+            <section class="overview">
+                <div class="accordion" id="accordionExample">
+                    <br><h1>Greater Minneapolis-Saint Paul food resources for kids during COVID-19</h1>
+                    
+                </div>
+            </section>
+            
+            <section class="main">
+                <div id="geocoder" class="geocoder"></div>
+                <div id="map"></div>
+            </section><br>
+            
+            <section class="about">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><strong>About this map</strong>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p> Food insecurity is an ongoing problem that is being exacerbated by school and business closures due to the COVID-19 outbreaks, and I created this to be a freely available resource to help communities in Minnesota during this crisis. I cannot guarantee the accuracy of this information, as this is a project I am taking on by myself in my spare time, and the information I gathered is either from public websites or input from others. I am a cartographer who loves public health mapping and the Midwest, and you can learn more about me and what I do <a href=https://emilliganmaps.github.io>here.</a> A huge thanks to <a href=https://twitter.com/ChrisLKellerABQ>Chris Keller</a>, who originally created the foundation of this code for the state of <a href="http://chrislkeller.com/new-mexico-grab-and-go-meal-pickups-for-parents/">New Mexico</a> and kindly allowed me to adapt it for MSP!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section><br><br>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+    
+</html>
